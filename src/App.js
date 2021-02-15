@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import LocalStateComponent from './components/LocalStateComponent';
+import ReduxReactAdvancedComponent from './components/ReduxReactAdvancedComponent';
+import ReduxStateComponent from './components/ReduxStateComponent';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <LocalStateComponent />
+      <hr />
+      <ReduxStateComponent />
+      <hr />
+      <ReduxReactAdvancedComponent />
     </div>
   );
 }
